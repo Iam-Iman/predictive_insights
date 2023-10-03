@@ -72,16 +72,13 @@ This project can be run on a standard laptop or a machine with the following spe
 - Disk Space: 1GB free space for data and code
 - Operating System: Windows, macOS, or Linux
 
-Alternatively, you can use cloud-based platforms such as Google Colab or Kaggle if you prefer a hosted environment.
+The platform used was cloud-based, Google Colab connected to Python 3 Google Compute Engine backend.
 
-## Expected Run Times
+## Expected Run Time Of The Entire Notebook
 
-- `01_data_preparation.ipynb`: Approximately 10 minutes
-- `02_feature_engineering.ipynb`: Around 15 minutes
-- `03_model_training.ipynb`: Depending on model complexity, up to 30 minutes
-- `04_results_visualization.ipynb`: About 10 minutes
+- `predictive_insights_notebook.ipynb`: Approximately 8.6 minutes
 
-The run times may vary based on hardware and dataset size.
+The run times may vary based on system used.
 
 ## Contributors
 
