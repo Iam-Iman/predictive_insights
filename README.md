@@ -1,7 +1,3 @@
-Below is a sample README file that includes detailed documentation on setting up project folders, running the code, explanations of features, environment setup, hardware requirements, and expected run times for each notebook. You can customize this template for your specific project:
-
----
-
 # Predictive Insights Youth Employment Project
 
 ## Project Overview
