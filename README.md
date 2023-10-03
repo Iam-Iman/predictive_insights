@@ -1,42 +1,100 @@
-# Predictive Insights Youth Employment
+Below is a sample README file that includes detailed documentation on setting up project folders, running the code, explanations of features, environment setup, hardware requirements, and expected run times for each notebook. You can customize this template for your specific project:
 
-## Overview
+---
 
-This data science project aims to address the critical issue of youth unemployment in South Africa by developing predictive models using machine learning techniques. The project leverages data from labor market surveys conducted over four rounds at six-month intervals. The primary objective is to predict whether a young person will be employed one year after the baseline survey.
+# Predictive Insights Youth Employment Project
 
-The project utilizes two primary machine learning models, namely the RandomForestClassifier and XGBoost, with a focus on optimizing the XGBoost model's hyperparameters using GridSearchCV. The ultimate goal is to achieve a high ROC AUC score, demonstrating the model's effectiveness in predicting youth employment outcomes.
+## Project Overview
 
-## Data
+This data science project focuses on addressing youth unemployment in South Africa by developing predictive models using machine learning techniques. The project aims to predict youth employment outcomes based on data collected from labor market surveys. This README file provides comprehensive information on setting up the project, running the code, understanding features, environment setup, hardware requirements, and expected run times for each notebook.
 
-- The dataset consists of information collected at the baseline survey, including numerical, categorical, and text responses.
-- Additional demographic information such as age, school level, and results are included.
-- The training set comprises one observation per individual, containing baseline information and the target outcome (employed or not) one year later.
-- The test set includes baseline data without the target outcome.
+## Folder Structure
 
-## Key Findings
+The project follows the following folder structure:
 
-- The optimized XGBoost model achieved a significant ROC AUC score of 0.8584, showcasing its predictive power.
-- Demographic features like gender, province, geography, status, tenure, schoolquintile, round, age, and education level played a substantial role in determining youth employment outcomes.
-- Notably, school subjects had a limited impact on employment probabilities, while education levels such as matriculation and degrees emerged as influential factors.
+```
+predictive_insights/
+├── data/
+│   ├── raw_data.csv          # Raw dataset
+│   ├── processed_data.csv    # Processed dataset
+├── notebooks/
+│   ├── 01_data_preparation.ipynb   # Data preprocessing
+│   ├── 02_feature_engineering.ipynb  # Feature engineering
+│   ├── 03_model_training.ipynb      # Model training and evaluation
+│   └── 04_results_visualization.ipynb  # Results visualization
+├── src/
+│   ├── utils.py        # Custom utility functions
+├── requirements.txt    # List of project dependencies
+├── environment.yml     # Conda environment file
+└── README.md           # Project documentation
+```
 
-## Repository Structure
+## Order of Execution
 
-- `data/`: Contains the dataset used in the project.
-- `notebooks/`: Jupyter notebooks detailing data exploration, preprocessing, model training, and evaluation.
-- `src/`: Source code for custom functions or modules.
-- `requirements.txt`: Lists all project dependencies for reproducibility.
+1. Start with `01_data_preparation.ipynb` to perform data preprocessing, cleaning, and exploration.
+2. Move on to `02_feature_engineering.ipynb` for feature engineering and data transformation.
+3. Proceed with `03_model_training.ipynb` to train and evaluate machine learning models.
+4. Finally, explore the results and visualizations in `04_results_visualization.ipynb`.
 
+## Features Explanation
 
-## Conclusion
+- **Gender:** Categorical feature representing the individual's gender.
+- **Province:** Categorical feature indicating the individual's province.
+- **Geography:** Categorical feature describing the geographical region.
+- **Status:** Categorical feature representing the individual's employment status.
+- **Tenure:** Numerical feature indicating the duration of employment.
+- **Schoolquintile:** Categorical feature representing the school quintile.
+- **Round:** Categorical feature denoting the survey round.
+- **Age:** Numerical feature indicating the individual's age.
+- **Education Level:** Categorical feature representing the highest education level attained.
 
-This project underscores the potential of machine learning and data-driven solutions in addressing pressing societal challenges like youth unemployment. The achieved ROC AUC score of 0.8584 reflects the model's accuracy and its ability to provide valuable insights for informed decision-making and interventions.
+## Environment Setup
 
-By understanding the complex dynamics of youth employment outcomes, this project contributes to economic empowerment and supports the career growth of young individuals in South Africa.
+To replicate the project environment, you can use the provided Conda environment file:
+
+- `environment.yml`: Create a Conda environment using this file.
+
+```bash
+conda env create -f environment.yml
+conda activate predictive-insights-env
+```
+
+You can also install the required dependencies using pip:
+
+- `requirements.txt`: Install dependencies using pip.
+
+```bash
+pip install -r requirements.txt
+```
+
+## Hardware Requirements
+
+This project can be run on a standard laptop or a machine with the following specifications:
+
+- CPU: Dual-core processor or higher
+- RAM: 8GB or more
+- Disk Space: 1GB free space for data and code
+- Operating System: Windows, macOS, or Linux
+
+Alternatively, you can use cloud-based platforms such as Google Colab or Kaggle if you prefer a hosted environment.
+
+## Expected Run Times
+
+- `01_data_preparation.ipynb`: Approximately 10 minutes
+- `02_feature_engineering.ipynb`: Around 15 minutes
+- `03_model_training.ipynb`: Depending on model complexity, up to 30 minutes
+- `04_results_visualization.ipynb`: About 10 minutes
+
+The run times may vary based on hardware and dataset size.
 
 ## Contributors
 
 - [Iman Ngwepe-Ntshibida](https://github.com/Iam-Iman)
+- [Collaborator Name](https://github.com/collaborator-username)
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
