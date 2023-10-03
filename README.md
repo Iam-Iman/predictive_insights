@@ -86,7 +86,6 @@ The run times may vary based on hardware and dataset size.
 ## Contributors
 
 - [Iman Ngwepe-Ntshibida](https://github.com/Iam-Iman)
-- [Collaborator Name](https://github.com/collaborator-username)
 
 ## License
 
