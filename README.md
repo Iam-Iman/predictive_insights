@@ -42,13 +42,13 @@ Two machine learning models were trained: Random Forest Classifier and XGBoost C
 
 ### Model Evaluation
 
-Model performance was assessed using ROC AUC score. The Random Forest model achieved an ROC AUC score of 0.8.., while the XGBoost model achieved a score of 0.8..... Feature importance and Mutual Information for the XGB model was also analyzed.
+Model performance was assessed using ROC AUC score. The Random Forest model achieved an ROC AUC score of 0.8, while the XGBoost model achieved a score of 0.861 Feature importance and Mutual Information for the XGB model was also analyzed.
 
 ## 4. Project Setup
 
 ### File Structure
 
-- **Data**: Contains the raw data files (however these won't be shared publically).
+- **Data**: Contains the raw data and submission files (however these won't be shared publically).
 - **Code**: Contains Google Colab notebook.
 - **Docs**: Houses documentation, including this README.
   
@@ -73,10 +73,11 @@ Model performance was assessed using ROC AUC score. The Random Forest model achi
 
 ### Expected Run Times
 
-- Total expected time to run entire notebook = .... minutes
+- Total expected time to run entire notebook = approximately 4 minutes
+- Long duration times because of GridSearchCV for the XGBClassifier model.
 
 ## Conclusion
 
-In conclusion, this project effectively addressed the critical issue of youth unemployment in South Africa using machine learning. Two models, Random Forest Classifier and XGBoost Classifier, were developed and fine-tuned, achieving impressive ROC AUC scores of 0.8... and 0.8.., respectively. Notably, demographic features such as gender, along with other factors including province, geography, status, tenure, school quintile, round, age, and education level, played significant roles in determining youth employment outcomes. These insights provide a deeper understanding of the complex dynamics influencing youth employment outcomes and support evidence-based decision-making for organizations like Predictive Insights.
+In conclusion, this project effectively addressed the critical issue of youth unemployment in South Africa using machine learning. Two models, Random Forest Classifier and XGBoost Classifier, were developed and fine-tuned, achieving  ROC AUC scores of 0.8244 and 0.8561, respectively. Notably, demographic features such as gender, along with other factors including province, geography, status, tenure, school quintile, round, age, and education level, played significant roles in determining youth employment outcomes. These insights provide a deeper understanding of the complex dynamics influencing youth employment outcomes and support evidence-based decision-making for organizations like Predictive Insights.
 
 ---
